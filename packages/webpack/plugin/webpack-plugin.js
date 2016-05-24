@@ -7,6 +7,7 @@ Plugin.registerCompiler({
   filenames: [
     'webpack.json',
     'webpack.conf.js',
+    'webpack.config.js',
     'webpack.packages.json'
   ]
 }, () => new WebpackCompiler());
