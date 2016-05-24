@@ -53,6 +53,7 @@ WebpackCompiler = class WebpackCompiler {
     }
 
     const configFiles = filterFiles(files, 'webpack.conf.js');
+    configFiles = configFiles.concat(filterFiles(files, 'webpack.config.js'));
 
     const platform = files[0].getArch();
     const shortName =
